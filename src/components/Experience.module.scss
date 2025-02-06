@@ -1,0 +1,67 @@
+@use "../app/config" as config;
+
+.card {
+    // background-color: config.$primary-color;
+    padding: 20px 0;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-shrink: 0;
+
+    h3 {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    p {
+        margin: 0.5rem 0;
+        line-height: 1.5;
+        color: config.$paragraph-color;
+
+        strong {
+            font-weight: bold;
+        }
+    }
+
+    &:hover {
+        background-color: blue;
+        opacity: 0.7;
+        cursor: pointer;
+    }
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.chronological {
+    padding-top: 2px;
+    flex: 1;
+    width: 30%;
+
+    hr {
+        display: inline-block;
+        bottom: 0.3em;
+        width: 20px;
+        position: relative;
+    }
+}
+
+.content {
+    flex: 2;
+    width: 70%;
+
+    h3 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+}
+
+.icon {
+    width: 15px;
+}

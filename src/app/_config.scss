@@ -1,0 +1,33 @@
+$primary-color: #0f172a;
+$card-color: #344CB7;
+$left-text-color: #94a3b8;
+$horizontal-line: #94a3b8;
+$paragraph-color: #94a3b8;
+$selection-color: rgba(57, 132, 255, 0.3);
+
+$button-color: #3EB2FD;
+
+@mixin media-sm {
+    @media screen and (max-width: 480px) {
+        @content;
+    }
+}
+
+
+@mixin media-md {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin media-lg {
+    @media screen and (max-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin media-xl {
+    @media screen and (max-width: 1600px) {
+        @content;
+    }
+}
