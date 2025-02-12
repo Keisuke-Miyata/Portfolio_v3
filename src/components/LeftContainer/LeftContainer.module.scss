@@ -1,4 +1,4 @@
-@use '../app/config' as config;
+@use '../../app/config' as config;
 
 .leftContainer {
     position: fixed;
@@ -11,6 +11,12 @@
     text-align: center;
     z-index: 1;
     left: 0;
+
+    @include config.media-md{
+        position: static;
+        width: 100%;
+        margin: 10%;
+    }
 
     h1 {
         margin-bottom: 0.5rem;
@@ -102,5 +108,9 @@
             font-size: 32px;
             /* Adjust the icon size */
         }
+    }
+
+    @include config.media-md {
+
     }
 }

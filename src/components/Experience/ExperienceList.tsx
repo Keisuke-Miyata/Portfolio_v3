@@ -1,6 +1,6 @@
 // components/ExperienceList.tsx
 import Experience from "./ExperienceCard";
-import { experienceData } from "../data/experienceData";
+import { experienceData } from "../../data/experienceData";
 
 export default function ExperienceList() {
     return (

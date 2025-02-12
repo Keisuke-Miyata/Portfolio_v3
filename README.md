@@ -1,36 +1,99 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Personal Portfolio v3
 
-## Getting Started
+**Description**
+A responsive and interactive portfolio built using Next.js and styled with Sass. It showcase my skills, experiences, and projects, with a clean and modern design. The portfolio is fully responsive, ensuring it looks great on all devices.
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Table of Contents
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- [Personal Portfolio v3](#personal-portfolio-v3)
+  - [Table of Contents](#table-of-contents)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Technologies](#technologies)
+  - [Features](#features)
+  - [Contributing](#contributing)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Installation
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+To run this project locally, follow these steps:
 
-## Deploy on Vercel
+1.  **Clone the repository**
+   ```bash
+   cd your-portfolio
+   ```
+2.  **Navigate into the project directory**
+    ```bash
+    cd my-app
+    ```
+3.  **Install dependencies**
+    ```bash
+    npm install
+    ```
+4.  **Run the development server**
+    ```bash
+    npm run dev
+    ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+    The project will be available at `http://localhost:3000`.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Usage
+
+After starting the development server, you can view the portfolio in your browser at `http://localhost:3000`. The portfolio is designed to be fully responsive, so it will adjust seamlessly across devices. Key sections include:
+
+- **About**: Learn more about me, my background.
+- **Experience**: A list of my professional experience and achievements.
+- **Projects**: Showcases some of the projects I’ve worked on, with descriptions and links to GitHub repositories.
+
+
+## Technologies
+
+This portfolio is built with the following technologies:
+
+- **Next.js** - A React-based framework for building server-rendered web applications.
+- **Sass** - A preprocessor for CSS that allows more flexibility and better organization of styles.
+- **React** - A JavaScript library for building user interfaces.
+- **Vercel** - For deploying the portfolio and ensuring smooth hosting.
+- **Inter** - The typeface used throughout the site for a modern, clean look.
+
+## Features
+
+- **Responsive Design**: Adapts seamlessly to different screen sizes, from mobile to desktop.
+- **Interactive Elements**: Includes mouse-based effects and smooth hover transitions.
+- **Light/Dark Theme**: Dark and light modes for better accessibility.
+- **Animated Navigation**: When navigating sections, horizontal lines animate to show the active section.
+
+## Contributing
+
+If you'd like to contribute to this project, feel free to fork the repository and create a pull request. Here’s how you can contribute:
+
+1. **Fork the repository**.
+2. **Clone your fork**:
+    ```bash
+    git clone https://github.com/Keisuke-Miyata/Portfolio_v3
+    ```
+
+3. **Create a new branch**:
+    ```bash
+    git checkout -b feature-name
+    ```
+
+4. **Make your changes and commit them**:
+    ```bash
+    git commit -am 'Add feature'
+    ```
+
+5. **Push to your fork**:
+    ```bash
+    git push origin feature-name
+    ```
+
+6. **Create a pull request**.
+
+---

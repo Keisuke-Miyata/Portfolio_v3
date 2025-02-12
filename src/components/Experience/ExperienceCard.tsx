@@ -1,5 +1,5 @@
 import styles from './Experience.module.scss';
-import Technologies from './Technologies';
+import Technologies from '../Technologies/Technologies';
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import Link from 'next/link';
 

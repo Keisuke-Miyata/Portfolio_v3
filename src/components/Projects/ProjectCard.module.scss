@@ -1,12 +1,12 @@
-@use "../app/config" as config;
+@use "../../app/config" as config;
 
 .card {
-    // background-color: config.$primary-color;
+    background-color: config.$primary-color;
     padding: 20px 0;
     border-radius: 8px;
     display: flex;
-    flex-direction: column;
     gap: 10px;
+    flex-direction: column;
     flex-shrink: 0;
 
     h3 {
@@ -18,40 +18,36 @@
         margin: 0.5rem 0;
         line-height: 1.5;
         color: config.$paragraph-color;
-
-        strong {
-            font-weight: bold;
-        }
     }
+
 
     &:hover {
         background-color: blue;
-        opacity: 0.7;
         cursor: pointer;
     }
 }
 
 .container {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
 }
 
-.chronological {
-    padding-top: 2px;
-    flex: 1;
+.left {
     width: 30%;
+    flex: 1;
 
-    hr {
-        display: inline-block;
-        bottom: 0.3em;
-        width: 20px;
-        position: relative;
-    }
 }
 
-.content {
+.icon {
+    width: 15px;
+}
+
+.right {
     flex: 2;
     width: 70%;
+    // float: right;
 
     h3 {
         font-size: 16px;
@@ -62,6 +58,6 @@
     }
 }
 
-.icon {
-    width: 15px;
+.imageContainer {
+    padding-top: 2px;
 }

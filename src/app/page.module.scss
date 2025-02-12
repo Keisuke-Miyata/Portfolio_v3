@@ -35,6 +35,7 @@
 
   @include config.media-md {
     flex-direction: column;
+    align-items: center;
   }
 
 }
