@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "next-themes"
+import Script from "next/script"
 
 const inter = Inter({
   variable: "--font-inter",
@@ -33,7 +34,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         <link rel="icon" href="/alphabet-k-icon.png" type="image/png" />
-      <script src="https://kit.fontawesome.com/5fd9aaf434.js" crossOrigin="anonymous"></script>
+      <Script src="https://kit.fontawesome.com/5fd9aaf434.js" crossOrigin="anonymous"></Script>
       </head>
       <body className={`${inter.variable} ${geistSans.variable} ${geistMono.variable}`}>
         <ThemeProvider

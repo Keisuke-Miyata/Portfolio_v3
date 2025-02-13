@@ -4,7 +4,7 @@ import styles from "./page.module.scss";
 import ExperienceList from "../components/Experience/ExperienceList";
 import ProjectsList from "../components/Projects/ProjectsList";
 import About from "../components/About/About";
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 import LeftContainer from "@/components/LeftContainer/LeftContainer";
 import Arrow from "../components/Arrow/Arrow";
 

@@ -1,6 +1,5 @@
 import styles from './Experience.module.scss';
 import Technologies from '../Technologies/Technologies';
-import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import Link from 'next/link';
 import Arrow from "../Arrow/Arrow"
 
@@ -31,7 +30,8 @@ export default function Experience({
             <h5>{startDate} <hr /> {endDate}</h5>
           </div>
           <div className={styles.content}>
-            <h3>{title} <Arrow /></h3>
+            <h3>{company}<Arrow /></h3>
+            <h5>{title}</h5>
             <p>{description}</p>
             <Technologies technologies={technologies} />
           </div>
