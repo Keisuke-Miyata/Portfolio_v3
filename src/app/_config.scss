@@ -8,7 +8,7 @@ $selection-color: rgba(57, 132, 255, 0.3);
 $button-color: #3EB2FD;
 
 @mixin media-sm {
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 640px) {
         @content;
     }
 }
@@ -27,7 +27,13 @@ $button-color: #3EB2FD;
 }
 
 @mixin media-xl {
-    @media screen and (max-width: 1600px) {
+    @media screen and (max-width: 1280px) {
+        @content;
+    }
+}
+
+@mixin media-2xl {
+    @media screen and (max-width: 1536px) {
         @content;
     }
 }

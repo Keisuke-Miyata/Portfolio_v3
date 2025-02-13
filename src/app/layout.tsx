@@ -1,7 +1,13 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter, Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "next-themes"
+
+const inter = Inter({
+  variable: "--font-inter",
+  subsets: ["latin"],
+  display: "swap",
+});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -14,7 +20,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Kei's Portfolio",
+  title: "Keisuke Miyata",
   description: "Welcome to Kei's personal portfolio showcasing projects and skills.",
 };
 
@@ -28,7 +34,7 @@ export default function RootLayout({
       <head>
       <script src="https://kit.fontawesome.com/5fd9aaf434.js" crossOrigin="anonymous"></script>
       </head>
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body className={`${inter.variable} ${geistSans.variable} ${geistMono.variable}`}>
         <ThemeProvider
             storageKey="theme"
             enableSystem={true}

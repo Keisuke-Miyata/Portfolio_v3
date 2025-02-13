@@ -10,8 +10,8 @@
   flex-direction: row;
 
   &::selection {
-    background-color: config.$selection-color; // Change this to any color you like
-    color: inherit; // Keeps the text color unchanged
+    background-color: config.$selection-color;
+    color: inherit;
   }
 
   &::after {
@@ -21,11 +21,11 @@
     left: calc(var(--x, 0) - 300px);
     width: 600px;
     height: 600px;
-    background: radial-gradient(black, transparent 60%);
+    background: radial-gradient(gray, transparent 60%);
 
     opacity: 0;
     transition: opacity 2s;
-    pointer-events: none;  /* This ensures the cursor effect doesn't block other hover interactions */
+    pointer-events: none;
 
   }
 
@@ -33,7 +33,7 @@
     opacity: 0.4;
   }
 
-  @include config.media-md {
+  @include config.media-lg {
     flex-direction: column;
     align-items: center;
   }
@@ -44,15 +44,28 @@
 // Main content styles
 .right {
   margin-left: 50%;
-  margin-right: 10%;
+  margin-right: 8%;
   width: 50%;
   flex: 1;
-  padding: 2rem;
+  padding: 1rem 0 2rem 0;
   overflow-y: auto;
   overflow: hidden;
-  max-height: 100vh;
+  max-height: 100%;
   background-color: config.$primary-color;
   min-height: 200vh;
+
+  @include config.media-xl {
+    margin-right: 0;
+    padding: 2rem 2rem 2rem 0;
+  }
+
+  @include config.media-lg {
+    margin-left: 0;
+    width: 100%;
+    min-height: 100%;
+    max-height: none;
+    padding: 2rem;
+  }
 
   .section {
     margin-bottom: 4rem;
@@ -60,6 +73,8 @@
     h2 {
       font-size: 1.5rem;
       margin-bottom: 1rem;
+      margin-left: 5px;
+
     }
   }
 
@@ -74,18 +89,14 @@
       margin-bottom: 0.5rem;
     }
   }
-  @include config.media-md {
-    margin-left: 0; /* Remove left margin for better spacing on medium screens */
-    margin-right: 0; /* Remove right margin */
-    width: 100%; /* Take full width when stacked vertically */
-  }
+  
 }
 
 .themeToggle {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .comments {

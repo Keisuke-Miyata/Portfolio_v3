@@ -1,13 +1,13 @@
 @use "../../app/config" as config;
 
 .card {
-    // background-color: config.$primary-color;
     padding: 20px 0;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
     gap: 10px;
     flex-shrink: 0;
+    // transition: box-shadow 0.3s ease, background-color 0.3s ease;
 
     h3 {
         font-size: 1.2rem;
@@ -26,7 +26,6 @@
 
     &:hover {
         background-color: blue;
-        opacity: 0.7;
         cursor: pointer;
     }
 }
@@ -34,12 +33,17 @@
 .container {
     display: flex;
     width: 100%;
+    gap: 10px;
+    flex-direction: row;
+
+    @include config.media-sm {
+        flex-direction: column;
+    }
 }
 
 .chronological {
     padding-top: 2px;
     flex: 1;
-    width: 30%;
 
     hr {
         display: inline-block;
@@ -47,11 +51,22 @@
         width: 20px;
         position: relative;
     }
+
+    h5 {
+        font-size: 12px;
+        margin-left: 5px;
+    }
+
+    @include config.media-md {
+        width: 100%;
+        gap: 5px;
+        margin-left: 0;
+    }
 }
 
 .content {
     flex: 2;
-    width: 70%;
+
 
     h3 {
         font-size: 16px;
@@ -59,6 +74,14 @@
 
     p {
         font-size: 12px;
+    }
+    @include config.media-lg {
+        width: 80%;
+        flex: 3;
+    }
+
+    @include config.media-md {
+        width: 100%;
     }
 }
 

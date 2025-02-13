@@ -2,25 +2,40 @@
 
 .leftContainer {
     position: fixed;
-    width: 25%;
-    height: 100vh;
-    margin: 120px 40% 100px 10vw;
+    width: 35%;
+    height: 100%;
+    margin-top: 110px;
+    margin-left: 8%;
     display: flex;
     flex-direction: column;
     align-items: start;
-    text-align: center;
     z-index: 1;
-    left: 0;
 
-    @include config.media-md{
-        position: static;
+    @include config.media-xl {
+        margin-left: 0;
+        padding: 2rem;
+        width: 45%;
+        margin-top: 100px;
+    }
+
+    @include config.media-lg {
+        position: relative;
         width: 100%;
-        margin: 10%;
+        margin: 10% auto 0;
+        text-align: center;
+        height: auto;
+        align-items: center;
+        padding: 0 1.5rem;
     }
 
     h1 {
         margin-bottom: 0.5rem;
         font-size: 3rem;
+
+        @include config.media-lg {
+            text-align: center;
+            width: 100%;
+        }
     }
 
     h2 {
@@ -32,6 +47,10 @@
     p {
         text-align: left;
         line-height: 1.5em;
+
+        @include config.media-lg {
+            text-align: center;
+        }
     }
 
     nav {
@@ -50,9 +69,6 @@
 
         }
 
-
-
-
         a {
             color: config.$left-text-color;
             text-decoration: none;
@@ -67,6 +83,7 @@
             }
 
         }
+
         .active {
             color: white;
         }
@@ -76,25 +93,40 @@
             color: white;
         }
     }
-    @include config.media-md {
-        width: 100%; /* Take full width when stacked vertically */
-        z-index: 0;
-        position: relative;
-      }
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    width: 100%;
 }
 
 
 .themeToggle {
+    position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 5px;
+    right: 0;
+    svg {
+        transition: transform 0.2s ease-in-out;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    @include config.media-lg {
+        margin-left: auto;  // Push it to the right on smaller screens
+    }
 }
 
 .socialLinks {
     display: flex;
-    gap: 1rem;
-    margin-top: 300px;
+    gap: 1.5rem;
+    margin-top: 15vh;
+    flex-wrap: wrap;
 
     a {
         color: config.$left-text-color;
@@ -110,7 +142,8 @@
         }
     }
 
-    @include config.media-md {
-
+    @include config.media-lg {
+        margin-top: 10vh;
+        gap: 3rem;
     }
 }

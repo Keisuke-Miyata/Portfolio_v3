@@ -1,9 +1,16 @@
+@use "../../app/config" as config;
+
 .section {
     margin-top: 100px;
     margin-bottom: 100px;
+    margin-left: 5px;
 
     p {
         margin-top: 20px;
         line-height: 1.5rem;
+    }
+
+    @include config.media-md {
+        margin-left: 0;
     }
 }

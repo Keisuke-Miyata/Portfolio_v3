@@ -1,12 +1,11 @@
 @use "../../app/config" as config;
 
 .card {
-    background-color: config.$primary-color;
     padding: 20px 0;
     border-radius: 8px;
     display: flex;
-    gap: 10px;
     flex-direction: column;
+    gap: 10px;
     flex-shrink: 0;
 
     h3 {
@@ -29,15 +28,23 @@
 
 .container {
     display: flex;
-    justify-content: space-between;
+    // width: 100%;
+    // justify-content: space-between;
+    flex-direction: row;
     align-items: center;
-    width: 100%;
+
+    @include config.media-sm {
+        flex-direction: column-reverse;
+        align-items: start;
+    }
 }
 
 .left {
-    width: 30%;
     flex: 1;
 
+    @include config.media-sm {
+        width: 100%;
+    }
 }
 
 .icon {
@@ -47,7 +54,14 @@
 .right {
     flex: 2;
     width: 70%;
-    // float: right;
+
+    @include config.media-lg {
+        flex: 3;
+    }
+    
+    @include config.media-sm {
+        width: 100%;
+    }
 
     h3 {
         font-size: 16px;
@@ -60,4 +74,8 @@
 
 .imageContainer {
     padding-top: 2px;
+
+    @include config.media-sm {
+        padding-top: 15px;
+    }
 }
