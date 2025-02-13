@@ -31,7 +31,7 @@
     h1 {
         margin-bottom: 0.5rem;
         font-size: 3rem;
-        color: config.$left-text-color;
+        color: config.$heading-color;
 
         @include config.media-lg {
             text-align: center;
@@ -42,7 +42,7 @@
     h2 {
         margin-bottom: 1rem;
         font-size: 1.5rem;
-        color: config.$left-text-color;
+        color: config.$heading-color;
     }
 
     p {
@@ -120,7 +120,7 @@
     }
 
     @include config.media-lg {
-        margin-left: auto;  // Push it to the right on smaller screens
+        margin-left: auto;
     }
 }
 

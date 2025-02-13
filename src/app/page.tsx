@@ -6,7 +6,7 @@ import ProjectsList from "../components/Projects/ProjectsList";
 import About from "../components/About/About";
 import { useEffect, useRef, useState } from "react";
 import LeftContainer from "@/components/LeftContainer/LeftContainer";
-import Arrow from "../components/Arrow/Arrow.tsx";
+import Arrow from "../components/Arrow/Arrow";
 
 export default function Home() {
   const containerRef = useRef<HTMLDivElement | null>(null);

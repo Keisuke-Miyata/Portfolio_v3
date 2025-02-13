@@ -28,10 +28,9 @@ export default function LeftContainer() {
 
     return (
         <div className={styles.leftContainer}>
-            {/* Header with Name and Theme Toggle */}
             <div className={styles.header}>
                 <h1>Keisuke Miyata</h1>
-                <div className={styles.themeToggle}>
+                {/* <div className={styles.themeToggle}>
                     {theme === "dark" ? (
                         <MdOutlineWbSunny
                             size={24}
@@ -47,7 +46,7 @@ export default function LeftContainer() {
                             title="Switch to Dark Mode"
                         />
                     )}
-                </div>
+                </div> */}
             </div>
 
             <h2>Software Engineer</h2>

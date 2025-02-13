@@ -1,7 +1,12 @@
 :root {
   --background: #ffffff;
-  --foreground:#171717;
+  --foreground:#0f172a;
   --font-default: var(--font-inter);
+  
+  --heading: rgba(226 232 240);
+  --horizontal-line: #94a3b8;
+  --paragraph-color: #94a3b8;
+  --link-color: white;
 }
 
 [data-theme='dark'] {
