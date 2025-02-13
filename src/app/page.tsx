@@ -6,6 +6,7 @@ import ProjectsList from "../components/Projects/ProjectsList";
 import About from "../components/About/About";
 import { useEffect, useRef, useState } from "react";
 import LeftContainer from "@/components/LeftContainer/LeftContainer";
+import Arrow from "../components/Arrow/Arrow.tsx";
 
 export default function Home() {
   const containerRef = useRef<HTMLDivElement | null>(null);
@@ -42,7 +43,7 @@ export default function Home() {
         <section id="experience" className={styles.section}>
           <h2>Experience</h2>
           <ExperienceList />
-          <a href="./Europass_cv.pdf" rel="noopener noreferrer" target='_blank'>View Full EU Resume</a>
+          <a href="./Europass_cv.pdf" rel="noopener noreferrer" target='_blank' className={styles.resume}>View Full EU Resume<Arrow /></a>
         </section>
 
         <section id="projects" className={styles.section}>
@@ -51,7 +52,7 @@ export default function Home() {
         </section>
 
         <div className={styles.comments}>
-          <p>Loosely designed in <a href="https://www.figma.com/" rel="noopener noreferrer" target="_blank">Figma</a>
+          <p>Loosely designed in <a href="https://www.figma.com/" rel="noopener noreferrer" target="_blank">Figma </a>
             and thrown together in <a href="https://code.visualstudio.com/" rel="noopener noreferrer" target="_blank">VS Code</a>.
             Built with <a href="https://nextjs.org/" rel="noopener noreferrer" target="_blank">Next.js</a>, styled with <a href="https://sass-lang.com/" rel="noopener noreferrer" target="_blank">Sass</a>, and deployed on Vercel. Text is set in <a href="https://fonts.google.com/specimen/Inter" rel="noopener noreferrer" target="_blank">Inter</a>, because why not</p>
         </div>

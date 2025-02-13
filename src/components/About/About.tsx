@@ -7,7 +7,7 @@ const About = () => {
             <h2>About Me</h2>
             <p>
                 Hi, I'm Keisuke, a Computer Science Student.
-                I'm currently a senior-year student at <Link href="https://www.edu.unideb.hu/">the University of Debrecen</Link>, pursuing a degree in Computer Science.
+                I'm currently a senior-year student at the <Link href="https://www.edu.unideb.hu/" className={styles.link}>University of Debrecen</Link>, pursuing a degree in Computer Science.
                 Throughout my studies, I've gained exposure to a wide range of topics in computer science, including software development, algorithms, and system design.
             </p>
             <p>

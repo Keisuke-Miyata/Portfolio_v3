@@ -1,11 +1,14 @@
 $primary-color: #0f172a;
 $card-color: #344CB7;
-$left-text-color: #94a3b8;
+$left-text-color: rgba(226 232 240);
 $horizontal-line: #94a3b8;
 $paragraph-color: #94a3b8;
+$link-color: white;
+$link-hover: #3EB2FD;
 $selection-color: rgba(57, 132, 255, 0.3);
 
 $button-color: #3EB2FD;
+$cursor-effect: rgb(62, 62, 77);
 
 @mixin media-sm {
     @media screen and (max-width: 640px) {

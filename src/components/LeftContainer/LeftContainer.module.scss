@@ -31,6 +31,7 @@
     h1 {
         margin-bottom: 0.5rem;
         font-size: 3rem;
+        color: config.$left-text-color;
 
         @include config.media-lg {
             text-align: center;
@@ -41,12 +42,13 @@
     h2 {
         margin-bottom: 1rem;
         font-size: 1.5rem;
-        color: gray;
+        color: config.$left-text-color;
     }
 
     p {
         text-align: left;
         line-height: 1.5em;
+        color: config.$paragraph-color;
 
         @include config.media-lg {
             text-align: center;
@@ -70,7 +72,7 @@
         }
 
         a {
-            color: config.$left-text-color;
+            color: config.$paragraph-color;
             text-decoration: none;
             margin: 0.5em 0;
             font-size: 1rem;
@@ -125,11 +127,11 @@
 .socialLinks {
     display: flex;
     gap: 1.5rem;
-    margin-top: 15vh;
+    margin-top: 20vh;
     flex-wrap: wrap;
 
     a {
-        color: config.$left-text-color;
+        color: config.$paragraph-color;
         text-decoration: none;
 
         &:hover {

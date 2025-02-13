@@ -2,7 +2,7 @@ import styles from "./ProjectCard.module.scss";
 import Image from "next/image";
 import Technologies from "../Technologies/Technologies";
 import Link from "next/link";
-import { FaArrowUpRightFromSquare } from "react-icons/fa6";
+import Arrow from "../Arrow/Arrow"
 import { ProjectData } from "../../data/projectsData";
 
 export default function Project({ name, description, link, technologies, image }: ProjectData) {
@@ -23,7 +23,7 @@ export default function Project({ name, description, link, technologies, image }
                 </div>
                 <div className={styles.right}>
                     <h3>
-                        {name} <FaArrowUpRightFromSquare className={styles.icon} />
+                        {name} <Arrow />
                     </h3>
                     <p>{description}</p>
                     <Technologies technologies={technologies} />

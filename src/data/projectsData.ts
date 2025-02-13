@@ -8,7 +8,7 @@ export interface ProjectData {
 
 export const projects: ProjectData[] = [
     {
-        name: "Portfolio Website",
+        name: "Real Estate Project",
         description: "A peer-to-peer real estate platform that simplifies accommodation and flatmate searches while integrating item exchange. Built with a modern tech stack.",
         link: "https://real-estate-virid-ten.vercel.app/",
         technologies: ["JavaScript", "Tailwind CSS", "REACT", "HTML", "Vercel", "Render"],

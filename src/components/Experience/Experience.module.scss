@@ -7,7 +7,6 @@
     flex-direction: column;
     gap: 10px;
     flex-shrink: 0;
-    // transition: box-shadow 0.3s ease, background-color 0.3s ease;
 
     h3 {
         font-size: 1.2rem;
@@ -25,7 +24,7 @@
     }
 
     &:hover {
-        background-color: blue;
+        background-color: config.$card-color;
         cursor: pointer;
     }
 }
@@ -33,7 +32,6 @@
 .container {
     display: flex;
     width: 100%;
-    gap: 10px;
     flex-direction: row;
 
     @include config.media-sm {
@@ -44,6 +42,7 @@
 .chronological {
     padding-top: 2px;
     flex: 1;
+    color: config.$paragraph-color;
 
     hr {
         display: inline-block;
@@ -54,13 +53,10 @@
 
     h5 {
         font-size: 12px;
-        margin-left: 5px;
     }
 
     @include config.media-md {
         width: 100%;
-        gap: 5px;
-        margin-left: 0;
     }
 }
 
@@ -74,7 +70,9 @@
 
     p {
         font-size: 12px;
+        color: config.$paragraph-color;
     }
+
     @include config.media-lg {
         width: 80%;
         flex: 3;
@@ -87,4 +85,8 @@
 
 .icon {
     width: 15px;
+}
+
+.technology {
+    padding-top: 2rem;
 }
