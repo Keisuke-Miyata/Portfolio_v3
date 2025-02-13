@@ -4,31 +4,31 @@ import styles from "./page.module.scss";
 import ExperienceList from "../components/Experience/ExperienceList";
 import ProjectsList from "../components/Projects/ProjectsList";
 import About from "../components/About/About";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import LeftContainer from "@/components/LeftContainer/LeftContainer";
 import Arrow from "../components/Arrow/Arrow";
 
 export default function Home() {
   const containerRef = useRef<HTMLDivElement | null>(null);
 
-  useEffect(() => {
-    const container = containerRef.current;
-    if (!container) return;
+  // useEffect(() => {
+  //   const container = containerRef.current;
+  //   if (!container) return;
 
-    const handleMouseMove = (e: MouseEvent) => {
-      const { x, y } = container.getBoundingClientRect();
+  //   const handleMouseMove = (e: MouseEvent) => {
+  //     const { x, y } = container.getBoundingClientRect();
 
-      const newX = e.clientX - x;
-      const newY = e.clientY - y;
+  //     const newX = e.clientX - x;
+  //     const newY = e.clientY - y;
 
 
-      container.style.setProperty("--x", `${e.clientX - x}px`);
-      container.style.setProperty("--y", `${e.clientY - y}px`);
-    };
+  //     container.style.setProperty("--x", `${e.clientX - x}px`);
+  //     container.style.setProperty("--y", `${e.clientY - y}px`);
+  //   };
 
-    container.addEventListener("mousemove", handleMouseMove);
-    return () => container.removeEventListener("mousemove", handleMouseMove);
-  }, []);
+  //   container.addEventListener("mousemove", handleMouseMove);
+  //   return () => container.removeEventListener("mousemove", handleMouseMove);
+  // }, []);
 
 
   return (

@@ -31,7 +31,7 @@
     h1 {
         margin-bottom: 0.5rem;
         font-size: 3rem;
-        color: config.$heading-color;
+        color: var(--heading-color);
 
         @include config.media-lg {
             text-align: center;
@@ -42,13 +42,14 @@
     h2 {
         margin-bottom: 1rem;
         font-size: 1.5rem;
-        color: config.$heading-color;
+        color: var(--heading-color);
     }
 
     p {
         text-align: left;
         line-height: 1.5em;
-        color: config.$paragraph-color;
+        color: var(--paragraph-color);
+        font-size: 16px;
 
         @include config.media-lg {
             text-align: center;
@@ -72,7 +73,7 @@
         }
 
         a {
-            color: config.$paragraph-color;
+            color: var(--paragraph-color);
             text-decoration: none;
             margin: 0.5em 0;
             font-size: 1rem;
@@ -81,18 +82,18 @@
 
 
             &:hover {
-                color: white;
+                color: var(--link-color);
             }
 
         }
 
         .active {
-            color: white;
+            color: var(--link-color);
         }
 
         .active hr {
             width: 100px;
-            color: white;
+            color: var(--link-color);
         }
     }
 }
@@ -131,16 +132,15 @@
     flex-wrap: wrap;
 
     a {
-        color: config.$paragraph-color;
+        color: var(--paragraph-color);
         text-decoration: none;
 
         &:hover {
-            color: white;
+            color: var(--social-hover);
         }
 
         i {
             font-size: 32px;
-            /* Adjust the icon size */
         }
     }
 

@@ -32,6 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        <link rel="icon" href="/alphabet-k-icon.png" type="image/png" />
       <script src="https://kit.fontawesome.com/5fd9aaf434.js" crossOrigin="anonymous"></script>
       </head>
       <body className={`${inter.variable} ${geistSans.variable} ${geistMono.variable}`}>

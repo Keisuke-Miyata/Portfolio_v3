@@ -16,7 +16,7 @@
     p {
         margin: 0.5rem 0;
         line-height: 1.5;
-        color: config.$paragraph-color;
+        color: var(--paragraph-color);
 
         strong {
             font-weight: bold;
@@ -24,7 +24,7 @@
     }
 
     &:hover {
-        background-color: config.$card-color;
+        background-color: var(--card-color);
         cursor: pointer;
     }
 }
@@ -42,7 +42,7 @@
 .chronological {
     padding-top: 2px;
     flex: 1;
-    color: config.$paragraph-color;
+    color: var(--paragraph-color);
 
     hr {
         display: inline-block;
@@ -69,8 +69,8 @@
     }
 
     p {
-        font-size: 12px;
-        color: config.$paragraph-color;
+        font-size: 14px;
+        color: var(--paragraph-color);
     }
 
     @include config.media-lg {

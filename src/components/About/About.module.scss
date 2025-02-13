@@ -8,16 +8,16 @@
     p {
         margin-top: 20px;
         line-height: 1.5rem;
-        color: config.$paragraph-color
+        color: var(--paragraph-color);
     }
 
     .link {
         font-size: 1.1rem;
-        color: config.$link-color;
+        color: var(--link-color);
         transition: color 0.3s ease-in-out;
 
         &:hover {
-            color: config.$link-hover;
+            color: var(--link-hover);
         }
     }
 

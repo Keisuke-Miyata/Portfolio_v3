@@ -4,7 +4,6 @@
   display: flex;
   min-height: 100vh;
   width: 100%;
-  background-color: config.$primary-color;
   position: relative;
   overflow: hidden;
   flex-direction: row;
@@ -21,7 +20,7 @@
     left: calc(var(--x, 0) - 300px);
     width: 600px;
     height: 600px;
-    background: radial-gradient(config.$cursor-effect, transparent 40%);
+    background: radial-gradient(var(--cursor-effect), transparent 40%);
 
     opacity: 0;
     transition: opacity 2s;
@@ -49,7 +48,6 @@
   overflow-y: auto;
   overflow: hidden;
   max-height: 100%;
-  background-color: config.$primary-color;
   min-height: 200vh;
 
   @include config.media-xl {
@@ -81,7 +79,7 @@
       margin-top: 20px;
 
       &:hover {
-        color: config.$link-hover;
+        color: var(--link-hover);
       }
     }
   }
@@ -89,7 +87,7 @@
 
 
   .card {
-    background-color: config.$card-color;
+    background-color: var(--card-color);
     padding: 1rem;
     margin-bottom: 1rem;
     border-radius: 8px;
@@ -117,14 +115,14 @@
     font-style: italic;
     font-weight: 300;
     max-width: 600px;
-    color: config.$paragraph-color;
+    color: var(--paragraph-color);
 
     a {
-      color: config.$link-color;
+      color: var(--link-color);
       font-size: 1.1rem;
     }
     a:hover {
-      color: config.$link-hover;
+      color: var(--link-hover);
     }
   }
 }
