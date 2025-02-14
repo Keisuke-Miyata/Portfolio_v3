@@ -40,6 +40,7 @@ export default function RootLayout({
         <ThemeProvider
             storageKey="theme"
             enableSystem={true}
+            defaultTheme="dark"
         >
           {children}
         </ThemeProvider>
