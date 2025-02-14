@@ -15,10 +15,10 @@ export const projects: ProjectData[] = [
         image: "/static/images/realestate_ss.png",
     },
     {
-        name: "E-commerce Platform",
-        description: "A scalable e-commerce platform with React and Node.js.",
-        link: "https://example.com/ecommerce",
-        technologies: ["JavaScript", "TypeScript", "SCSS", "REACT", "HTML"],
-        image: "/static/images/todo_list.png",
+        name: "Personal Portfolio V3",
+        description: "This features a responsive design and a theme toggle, built with Next.js and Sass.",
+        link: "https://portfoliov3-orpin.vercel.app/",
+        technologies: ["TypeScript", "JavaScript", "SCSS", "REACT", "Vercel", "HTML"],
+        image: "/static/images/portfolio_v3.png",
     },
 ];
