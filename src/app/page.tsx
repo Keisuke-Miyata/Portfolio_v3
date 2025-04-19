@@ -7,6 +7,7 @@ import About from "../components/About/About";
 import { useRef } from "react";
 import LeftContainer from "@/components/LeftContainer/LeftContainer";
 import Arrow from "../components/Arrow/Arrow";
+import SkillCardList from "../components/Skills/SkillCardList";
 
 export default function Home() {
   const containerRef = useRef<HTMLDivElement | null>(null);
@@ -51,11 +52,15 @@ export default function Home() {
           <ProjectsList />
         </section>
 
+        <SkillCardList />
+
         <div className={styles.comments}>
           <p>Loosely designed in <a href="https://www.figma.com/" rel="noopener noreferrer" target="_blank">Figma </a>
             and thrown together in <a href="https://code.visualstudio.com/" rel="noopener noreferrer" target="_blank">VS Code</a>.
             Built with <a href="https://nextjs.org/" rel="noopener noreferrer" target="_blank">Next.js</a>, styled with <a href="https://sass-lang.com/" rel="noopener noreferrer" target="_blank">Sass</a>, and deployed on Vercel. Text is set in <a href="https://fonts.google.com/specimen/Inter" rel="noopener noreferrer" target="_blank">Inter</a>, because why not</p>
         </div>
+
+
       </main>
     </div>
 

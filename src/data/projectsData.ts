@@ -21,4 +21,11 @@ export const projects: ProjectData[] = [
         technologies: ["TypeScript", "JavaScript", "SCSS", "REACT", "Vercel", "HTML"],
         image: "/static/images/portfolio_v3.png",
     },
+    {
+        name: "Flower Image Classification",
+        description: "",
+        link: "https://huggingface.co/spaces/Keitarou1003/Flower102_classification",
+        technologies: ["Python", "Hugging Face", "Pytorch"],
+        image: "",
+    },
 ];
