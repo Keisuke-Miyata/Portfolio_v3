@@ -10,27 +10,26 @@ export default function SkillCard({ technology, logo, proficiency }: SkillData) 
     const [inView, setInView] = useState(false);
 
     useEffect(() => {
+        const node = progressRef.current;
+        if (!node) return;
+
         const observer = new IntersectionObserver(
             ([entry]) => {
                 if (entry.isIntersecting) {
                     setInView(true);
-                    // Reset after animation for repeatable trigger
                     setTimeout(() => setInView(false), 6000);
                 }
             },
             { threshold: 0.5 }
         );
 
-        if (progressRef.current) {
-            observer.observe(progressRef.current);
-        }
+        observer.observe(node);
 
         return () => {
-            if (progressRef.current) {
-                observer.unobserve(progressRef.current);
-            }
+            observer.unobserve(node);
         };
     }, []);
+
 
 
     return (
@@ -46,7 +45,7 @@ export default function SkillCard({ technology, logo, proficiency }: SkillData) 
             <h3 className={styles.card__title}>{technology}</h3>
             <div className={styles.card__progressContainer}>
                 <div ref={progressRef} className={`${styles.card__progress}, ${inView ? styles.card__progressMoved : ""}`}>
-                    <div className={styles.card__progressBar} style={{width: `${proficiency}%`}}></div>
+                    <div className={styles.card__progressBar} style={{ width: `${proficiency}%` }}></div>
                 </div>
             </div>
         </div>

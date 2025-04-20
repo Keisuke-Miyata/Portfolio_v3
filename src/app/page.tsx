@@ -20,8 +20,8 @@ export default function Home() {
     const handleMouseMove = (e: MouseEvent) => {
       const { x, y } = container.getBoundingClientRect();
 
-      const newX = e.clientX - x;
-      const newY = e.clientY - y;
+      // const newX = e.clientX - x;
+      // const newY = e.clientY - y;
 
 
       container.style.setProperty("--x", `${e.clientX - x}px`);
