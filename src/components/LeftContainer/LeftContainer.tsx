@@ -53,7 +53,7 @@ export default function LeftContainer() {
             <p>I design and develop digital experiences that are as functional as they are beautiful.</p>
 
             <nav className={styles.nav}>
-                {["about", "experience", "projects"].map((id) => (
+                {["about", "experience", "projects", "skills"].map((id) => (
                     <a key={id} href={`#${id}`} className={activeSection === id ? styles.active : ""}>
                         <hr />
                         {id.toUpperCase()}

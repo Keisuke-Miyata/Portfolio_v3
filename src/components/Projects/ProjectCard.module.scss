@@ -22,7 +22,6 @@
 
     &:hover {
         background-color: var(--card-color);
-        cursor: pointer;
     }
 }
 
@@ -33,15 +32,18 @@
 
     @include config.media-sm {
         flex-direction: column-reverse;
-        align-items: start;
+        align-items: flex-start;
     }
 }
 
 .left {
+    display: flex;
     flex: 1;
-
+    flex-direction: column;
     @include config.media-sm {
+        flex-direction: row;
         width: 100%;
+        justify-content: space-evenly;
     }
 }
 
@@ -56,7 +58,7 @@
     @include config.media-lg {
         flex: 3;
     }
-    
+
     @include config.media-sm {
         width: 100%;
     }
@@ -68,12 +70,33 @@
     p {
         font-size: 14px;
     }
+
+    a {
+
+        &:hover {
+            color: black;
+            font-size: 1.1rem;
+        }
+    }
 }
 
 .imageContainer {
     padding-top: 2px;
+    padding-left: 5px;
 
     @include config.media-sm {
         padding-top: 15px;
+    }
+}
+
+
+.buttons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 5px;
+    margin-top: 15px;
+
+    @include config.media-sm {
+        padding-top: 20px;
     }
 }

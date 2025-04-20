@@ -1,7 +1,7 @@
 export interface SkillData {
-    technology: string;
-    logo: string;
-    proficiency: number;
+    readonly technology: string;
+    readonly logo: string;
+    readonly proficiency: number;
 }
 
 export const skills : SkillData[] = [
@@ -13,17 +13,22 @@ export const skills : SkillData[] = [
     {
         technology: "TypeScript",
         logo: "/static/logos/Typescript_logo.png",
-        proficiency: 70
+        proficiency: 50
     },
     {
         technology: "Python",
-        logo: "/static/logos/Python_logo.png",
-        proficiency: 70
+        logo: "/static/logos/Python-logo.png",
+        proficiency: 80
     },
     {
         technology: "React",
         logo: "/static/logos/React_logo.svg",
         proficiency: 70
+    },
+    {
+        technology: "Java",
+        logo: "/static/logos/java.png",
+        proficiency: 40
     }
 
 ]

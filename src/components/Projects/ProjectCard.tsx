@@ -4,11 +4,16 @@ import Technologies from "../Technologies/Technologies";
 import Link from "next/link";
 import Arrow from "../Arrow/Arrow"
 import { ProjectData } from "../../data/projectsData";
+import Button from "../Button/Button";
 
-export default function Project({ name, description, link, technologies, image }: ProjectData) {
+import { CiVideoOn } from "react-icons/ci";
+import { FaGithub } from "react-icons/fa";
+
+
+
+export default function Project({ name, description, websiteUrl, githubUrl, technologies, image }: ProjectData) {
     return (
         <div className={styles.card}>
-            <Link href={link} rel="noopener noreferrer" target="_blank">
             <div className={styles.container}>
                 <div className={styles.left}>
                     <div className={styles.imageContainer}>
@@ -20,16 +25,20 @@ export default function Project({ name, description, link, technologies, image }
                             style={{ objectFit: "contain" }}
                         />
                     </div>
-                </div>
-                <div className={styles.right}>
-                    <h3>
-                        {name} <Arrow />
-                    </h3>
-                    <p>{description}</p>
-                    <Technologies technologies={technologies} />
-                </div>
-                </div>
-            </Link>
+                    <div className={styles.buttons}>
+                        <Button href={websiteUrl} text="demo" icon={<CiVideoOn />} variant="demo"/>
+                        <Button href={githubUrl} text="code" icon={<FaGithub />} variant="repository"/>
+                    </div>
+
+            </div>
+            <div className={styles.right}>
+                <Link href={websiteUrl} target="_blank" rel="noopener noreferrer">
+                    {name} <Arrow />
+                </Link>
+                <p>{description}</p>
+                <Technologies technologies={technologies} />
+            </div>
+            </div>
         </div>
     );
 }
