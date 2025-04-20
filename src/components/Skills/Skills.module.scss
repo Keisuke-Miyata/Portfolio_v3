@@ -1,0 +1,96 @@
+@use "../../app/config" as config;
+
+.grid {
+    display: grid;
+    gap: 1.5rem;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    @include config.media-lg{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include config.media-md{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include config.media-sm{
+        grid-template-columns: 1fr;
+    }
+}
+
+.card {
+    background-color: #fff;
+    padding: 1.5rem 1rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+    max-width: 400px;
+    width: 100%;
+
+    &__icon {
+        width: 3.2rem;
+        height: 3.2rem;
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 0.8rem;
+    }
+
+    &__title {
+        font-size: 0.9rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
+
+    &__progressContainer {
+        width: 100%;
+        background-color: yellow;
+        border-radius: 3px;
+        text-align: center;
+    }
+
+    &__progress {
+        padding: 6px;
+        border-radius: 30px;
+        background: rgba(0, 0, 0, 0.25);
+        box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+
+    }
+
+    &__progressBar {
+        background-color: blue;
+        animation: progressAnimation 5s;
+        height: 18px;
+        border-radius: 20px;
+        background-image:
+            linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+        transition: 0.4s linear;
+        transition-property: width, background-color;
+    }
+
+    &__progressMoved {
+        background-color: blue;
+        animation: progressAnimation 5s;
+    }
+
+
+    @keyframes progressAnimation {
+        0% {
+            width: 0%;
+            background-color: #F9BCCA;
+        }
+        100% {
+            width: 100%;
+            background-color: transparent;
+        }
+    }
+
+
+
+}

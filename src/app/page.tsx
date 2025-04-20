@@ -7,28 +7,30 @@ import About from "../components/About/About";
 import { useRef } from "react";
 import LeftContainer from "@/components/LeftContainer/LeftContainer";
 import Arrow from "../components/Arrow/Arrow";
+import SkillCardList from "../components/Skills/SkillCardList";
+import { useEffect } from "react";
 
 export default function Home() {
   const containerRef = useRef<HTMLDivElement | null>(null);
 
-  // useEffect(() => {
-  //   const container = containerRef.current;
-  //   if (!container) return;
+  useEffect(() => {
+    const container = containerRef.current;
+    if (!container) return;
 
-  //   const handleMouseMove = (e: MouseEvent) => {
-  //     const { x, y } = container.getBoundingClientRect();
+    const handleMouseMove = (e: MouseEvent) => {
+      const { x, y } = container.getBoundingClientRect();
 
-  //     const newX = e.clientX - x;
-  //     const newY = e.clientY - y;
+      const newX = e.clientX - x;
+      const newY = e.clientY - y;
 
 
-  //     container.style.setProperty("--x", `${e.clientX - x}px`);
-  //     container.style.setProperty("--y", `${e.clientY - y}px`);
-  //   };
+      container.style.setProperty("--x", `${e.clientX - x}px`);
+      container.style.setProperty("--y", `${e.clientY - y}px`);
+    };
 
-  //   container.addEventListener("mousemove", handleMouseMove);
-  //   return () => container.removeEventListener("mousemove", handleMouseMove);
-  // }, []);
+    container.addEventListener("mousemove", handleMouseMove);
+    return () => container.removeEventListener("mousemove", handleMouseMove);
+  }, []);
 
 
   return (
@@ -51,11 +53,19 @@ export default function Home() {
           <ProjectsList />
         </section>
 
+        <section id="skills" className={styles.section}>
+          <h2>Skills</h2>
+          <SkillCardList />
+        </section>
+
+
         <div className={styles.comments}>
           <p>Loosely designed in <a href="https://www.figma.com/" rel="noopener noreferrer" target="_blank">Figma </a>
             and thrown together in <a href="https://code.visualstudio.com/" rel="noopener noreferrer" target="_blank">VS Code</a>.
             Built with <a href="https://nextjs.org/" rel="noopener noreferrer" target="_blank">Next.js</a>, styled with <a href="https://sass-lang.com/" rel="noopener noreferrer" target="_blank">Sass</a>, and deployed on Vercel. Text is set in <a href="https://fonts.google.com/specimen/Inter" rel="noopener noreferrer" target="_blank">Inter</a>, because why not</p>
         </div>
+
+
       </main>
     </div>
 

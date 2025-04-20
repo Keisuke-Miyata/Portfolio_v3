@@ -127,9 +127,10 @@
 
 .socialLinks {
     display: flex;
-    gap: 1.5rem;
-    margin-top: 20vh;
+    gap: 3rem;
+    margin-top: 35vh;
     flex-wrap: wrap;
+
 
     a {
         color: var(--paragraph-color);
@@ -142,6 +143,10 @@
         i {
             font-size: 32px;
         }
+    }
+
+    @include config.media-2xl {
+        margin-top: 20vh;
     }
 
     @include config.media-lg {
