@@ -45,7 +45,8 @@ export default function Home() {
         <section id="experience" className={styles.section}>
           <h2>Experience</h2>
           <ExperienceList />
-          <a href="./Europass_cv.pdf" rel="noopener noreferrer" target='_blank' className={styles.resume}>View Full EU Resume<Arrow /></a>
+          <a href="./Europass.pdf" rel="noopener noreferrer" target='_blank' className={styles.resume}>View Europass cv<Arrow /></a>
+          <a href="./resume_4_2025.pdf" rel="noopener noreferrer" target="_blank" className={styles.resume}>View Custom Resume<Arrow /></a>
         </section>
 
         <section id="projects" className={styles.section}>
