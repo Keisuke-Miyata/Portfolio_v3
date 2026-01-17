@@ -54,6 +54,23 @@ export default function Home() {
           <ProjectsList />
         </section>
 
+        <section id="certificates" className={styles.section}>
+          <h2>Certificates</h2>
+          <a href="./static/certificates/Application_AI_Predictive_Maintenance_certificate.pdf" rel="noopener noreferrer" target='_blank' className={styles.resume}>Applications of AI for Predictive Maintenance<Arrow /></a>
+          <a href="./static/certificates/Fundamentals_of_Accelerated_DS_certificate.pdf" rel="noopener noreferrer" target='_blank' className={styles.resume}>Fundamentals of Accelerated Data Science<Arrow /></a>
+          <a href="./static/certificates/Fundamentals_of_Deep_Learning_certificate.pdf" rel="noopener noreferrer" target='_blank' className={styles.resume}>Fundamentals of Deep Learning<Arrow /></a>
+          <a href="./static/certificates/Generative_AI_with_Diffusion_Models_certificate.pdf" rel="noopener noreferrer" target='_blank' className={styles.resume}>Generative AI with Diffusion Models<Arrow /></a>
+
+          <a
+            href="https://www.credly.com/users/keisuke-miyata.ba4b6625"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.badgeLink}
+          >
+            View all certificate badges <Arrow />
+          </a>
+        </section>
+
         <section id="skills" className={styles.section}>
           <h2>Skills</h2>
           <SkillCardList />

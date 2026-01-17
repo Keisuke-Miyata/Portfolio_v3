@@ -32,4 +32,20 @@ export const projects: ProjectData[] = [
         technologies: ["Python", "Hugging Face", "Pytorch"],
         image: "/static/images/flower102_classification_full.png",
     },
+    {
+        name: "Bootstrap-Portfolio",
+        description: "This portfolio website was created during my internship program at Lime Light TechLead. It is based on a Bootstrap template, customized by following the provided instructions while adding small unique design and functionality enhancements using HTML, CSS, JavaScript, and jQuery.",
+        websiteUrl: "https://keisuke-miyata.github.io/Bootstrap-Portfolio/",
+        githubUrl:"https://github.com/Keisuke-Miyata/Bootstrap-Portfolio",
+        technologies: ["HTML", "CSS", "JavaScript", "Bootstrap", "jQuery"],
+        image: "/static/images/bootstrap_portfolio.png",
+    },
+    {
+        name: "Parallax-Effect-Scrolling",
+        description: "This website was created during my internship at Lime Light TechLead by following provided instructions to implement a parallax scrolling effect. The project focuses on using HTML, CSS, and JavaScript to create smooth scrolling interactions and visual depth.",
+        websiteUrl: "https://keisuke-miyata.github.io/Parallax-Effect-Scrolling/",
+        githubUrl:"https://github.com/Keisuke-Miyata/Parallax-Effect-Scrolling",
+        technologies: ["HTML", "CSS", "JavaScript"],
+        image: "/static/images/parallax_effect.png",
+    },
 ];
