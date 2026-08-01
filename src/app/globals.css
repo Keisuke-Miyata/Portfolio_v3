@@ -12,6 +12,7 @@
   --button-color: #3EB2FD;
   --cursor-effect: rgb(62, 62, 77);
   --social-hover: white;
+  --theme-transition-duration: 0.6s;
 }
 
 [data-theme='light'] {
@@ -46,6 +47,12 @@ body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  transition:
+    background-color var(--theme-transition-duration) ease,
+    color var(--theme-transition-duration) ease,
+    border-color var(--theme-transition-duration) ease,
+    fill var(--theme-transition-duration) ease,
+    stroke var(--theme-transition-duration) ease;
 }
 
 a {

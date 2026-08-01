@@ -7,6 +7,7 @@
     flex-direction: column;
     gap: 10px;
     flex-shrink: 0;
+    transition: background-color 0.3s ease;
 
     h3 {
         font-size: 1.2rem;
@@ -27,6 +28,10 @@
     &:hover {
         background-color: var(--card-color);
         cursor: pointer;
+    }
+
+    &.noLink:hover {
+        cursor: default;
     }
 }
 

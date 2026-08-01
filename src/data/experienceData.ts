@@ -1,5 +1,14 @@
 // data/experienceData.ts
 export const experienceData = [
+    {
+        title: "Software Developer",
+        company: "Confidential (NDA)",
+        description:
+            "Maintained and repaired tools for a client. Built an internal company tool. Added new features to the company website.",
+        startDate: "Jun 2026",
+        endDate: "Ongoing",
+        technologies: ["TypeScript", "REACT", "AWS S3", "AWS CloudFront", "PostgreSQL", "Jaspersoft Studio", "Tailwind CSS"],
+    },
     // {
     //     title: "Software Engineer",
     //     company: "TechCorp",

@@ -1,12 +1,12 @@
-// import Experience from "./ExperienceCard";
-// import { experienceData } from "../../data/experienceData";
+import Experience from "./ExperienceCard";
+import { experienceData } from "../../data/experienceData";
 
 export default function ExperienceList() {
     return (
         <div>
-            {/* {experienceData.map((exp, index) => (
+            {experienceData.map((exp, index) => (
                 <Experience key={index} {...exp} />
-            ))} */}
+            ))}
         </div>
     );
 }

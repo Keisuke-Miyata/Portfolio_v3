@@ -34,6 +34,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         <link rel="icon" href="/alphabet-k-icon.png" type="image/png" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
       <Script src="https://kit.fontawesome.com/5fd9aaf434.js" crossOrigin="anonymous"></Script>
       </head>
       <body className={`${inter.variable} ${geistSans.variable} ${geistMono.variable}`}>

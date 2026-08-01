@@ -7,6 +7,7 @@
     flex-direction: column;
     gap: 10px;
     flex-shrink: 0;
+    transition: background-color 0.3s ease;
 
     h3 {
         font-size: 1.2rem;
@@ -72,6 +73,7 @@
     }
 
     a {
+        transition: color 0.3s ease;
 
         &:hover {
             color: black;

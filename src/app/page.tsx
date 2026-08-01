@@ -4,14 +4,16 @@ import styles from "./page.module.scss";
 import ExperienceList from "../components/Experience/ExperienceList";
 import ProjectsList from "../components/Projects/ProjectsList";
 import About from "../components/About/About";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import LeftContainer from "@/components/LeftContainer/LeftContainer";
 import Arrow from "../components/Arrow/Arrow";
 import SkillCardList from "../components/Skills/SkillCardList";
+import Loader from "../components/Loader/Loader";
 import { useEffect } from "react";
 
 export default function Home() {
   const containerRef = useRef<HTMLDivElement | null>(null);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const container = containerRef.current;
@@ -35,6 +37,7 @@ export default function Home() {
 
   return (
     <div ref={containerRef} className={styles.container}>
+      {isLoading && <Loader onFinish={() => setIsLoading(false)} />}
 
       {/* Left Side Navigation */}
       <LeftContainer />
